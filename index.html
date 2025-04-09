@@ -3,30 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Owethu's Boutique</title>
+    <title>Owethu's Boutique - Girls Clothing Store</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav id="desktop-nav">
-        <div class="logo">Owethu's Boutique</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="dresses">Dresses</a></li>
-                <li><a href="skirts">Skirts</a></li>
-                <li><a href="shoes">Shoes</a></li>
-                <li><a href="underwear">Underwear</a></li>
-            </ul>
-        </div>
-    </nav>
+    <div class="loading">
+        <div class="loading-spinner"></div>
+    </div>
 
-    <section id="home">
-        <div class="home-pic-container">
-            <img src="" alt="Home pikiture">
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Owethu's Boutique</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="#new-arrivals">New Arrivals</a></li>
+                <li><a href="#sale">Sale</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="#search" class="search-icon"><i class="fas fa-search"></i></a>
+                <a href="#cart" class="cart-icon"><i class="fas fa-shopping-cart"></i><span class="cart-count">0</span></a>
+                <a href="#account" class="account-icon"><i class="fas fa-user"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <h2>Welcome to Owethu's Boutique</h2>
+                <p>Discover the latest trends in girls' fashion</p>
+                <a href="shop.html" class="shop-now">Shop Now</a>
+            </div>
+        </section>
+
+        <section class="featured-categories" id="shop">
+            <h2>Shop by Category</h2>
+            <div class="category-grid">
+                <a href="dresses.html" class="category-card">
+                    <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Dresses">
+                    <h3>Dresses</h3>
+                </a>
+                <a href="tops.html" class="category-card">
+                    <img src="https://images.unsplash.com/photo-1554568218-0f1715e72254?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Tops">
+                    <h3>Tops</h3>
+                </a>
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Bottoms">
+                    <h3>Bottoms</h3>
+                </div>
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Accessories">
+                    <h3>Accessories</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="new-arrivals" id="new-arrivals">
+            <h2>New Arrivals</h2>
+            <div class="product-grid">
+                <!-- Product cards will be added dynamically with JavaScript -->
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <div class="newsletter-content">
+                <h2>Subscribe to Our Newsletter</h2>
+                <p>Get the latest updates on new products and upcoming sales</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Owethu's Boutique - Your one-stop shop for trendy girls' clothing. We offer the latest fashion trends with quality and style.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="dresses.html">Dresses</a></li>
+                    <li><a href="#new-arrivals">New Arrivals</a></li>
+                    <li><a href="#sale">Sale</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-envelope"></i> tatendamidzi49@gmail.com</p>
+                <p><i class="fas fa-phone"></i> +27 68 193 0814</p>
+                <p><i class="fas fa-map-marker-alt"></i> 120 Groove Street</p>
+            </div>
         </div>
-        <div class="section-text">
-            <h1 class="title">Featured Items </h1>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Tatenda Midzi. All rights reserved.</p>
         </div>
-    </section>
-    
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
