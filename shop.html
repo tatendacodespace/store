@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Owethu's Boutique</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="shop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Owethu's Boutique</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html" class="active">Shop</a></li>
+                <li><a href="#new-arrivals">New Arrivals</a></li>
+                <li><a href="#sale">Sale</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="#search" class="search-icon"><i class="fas fa-search"></i></a>
+                <a href="cart.html" class="cart-icon"><i class="fas fa-shopping-cart"></i><span class="cart-count">0</span></a>
+                <a href="#account" class="account-icon"><i class="fas fa-user"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="shop-main">
+        <section class="shop-header">
+            <h1>Shop Our Collection</h1>
+            <p>Discover the latest trends in girls' fashion</p>
+        </section>
+
+        <div class="shop-container">
+            <aside class="shop-sidebar">
+                <div class="filter-section">
+                    <h3>Categories</h3>
+                    <ul class="category-list">
+                        <li><a href="#" class="active">All Products</a></li>
+                        <li><a href="tops.html">Tops</a></li>
+                        <li><a href="bottoms.html">Bottoms</a></li>
+                        <li><a href="accessories.html">Accessories</a></li>
+                        <li><a href="#">Dresses</a></li>
+                        <li><a href="#">Shoes</a></li>
+                    </ul>
+                </div>
+
+                <div class="filter-section">
+                    <h3>Price Range</h3>
+                    <div class="price-range">
+                        <input type="range" min="0" max="100" value="50" class="price-slider">
+                        <div class="price-values">
+                            <span>$0</span>
+                            <span>$100</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filter-section">
+                    <h3>Size</h3>
+                    <div class="size-options">
+                        <button class="size-btn">XS</button>
+                        <button class="size-btn">S</button>
+                        <button class="size-btn">M</button>
+                        <button class="size-btn">L</button>
+                        <button class="size-btn">XL</button>
+                    </div>
+                </div>
+
+                <div class="filter-section">
+                    <h3>Color</h3>
+                    <div class="color-options">
+                        <button class="color-btn" style="background-color: #ff69b4;"></button>
+                        <button class="color-btn" style="background-color: #000000;"></button>
+                        <button class="color-btn" style="background-color: #ffffff;"></button>
+                        <button class="color-btn" style="background-color: #ffd700;"></button>
+                        <button class="color-btn" style="background-color: #0000ff;"></button>
+                    </div>
+                </div>
+            </aside>
+
+            <section class="shop-content">
+                <div class="shop-toolbar">
+                    <div class="sort-options">
+                        <label for="sort">Sort by:</label>
+                        <select id="sort">
+                            <option value="featured">Featured</option>
+                            <option value="newest">Newest</option>
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                        </select>
+                    </div>
+                    <div class="view-options">
+                        <button class="view-btn active" data-view="grid"><i class="fas fa-th"></i></button>
+                        <button class="view-btn" data-view="list"><i class="fas fa-list"></i></button>
+                    </div>
+                </div>
+
+                <div class="products-grid">
+                    <!-- Product 1 -->
+                    <div class="category-card" data-category="Dresses" data-size="M" data-color="pink">
+                        <div class="product-image">
+                            <img src="images/dresses/Floral summer dress.jfif" alt="Floral Summer Dress">
+                            <div class="product-overlay"></div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Floral Summer Dress</h3>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>(128)</span>
+                            </div>
+                            <p class="product-price">$49.99</p>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="category-card" data-category="Tops" data-size="S" data-color="pink">
+                        <div class="product-image">
+                            <img src="images/tops/pink blouse.jfif" alt="Pink Blouse">
+                            <div class="product-overlay"></div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Pink Blouse</h3>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>(95)</span>
+                            </div>
+                            <p class="product-price">$29.99</p>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="category-card" data-category="Bottoms" data-size="L" data-color="blue">
+                        <div class="product-image">
+                            <img src="images/bottoms/Blue Denim Skirt.jfif" alt="Denim Skirt">
+                            <div class="product-overlay"></div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Denim Skirt</h3>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(156)</span>
+                            </div>
+                            <p class="product-price">$39.99</p>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Product 4 -->
+                    <div class="category-card" data-category="Accessories" data-size="One Size" data-color="pink">
+                        <div class="product-image">
+                            <img src="images/accessories/floral headband.jfif" alt="Floral Headband">
+                            <div class="product-overlay"></div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Floral Headband</h3>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(89)</span>
+                            </div>
+                            <p class="product-price">$14.99</p>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Product 5 -->
+                    <div class="category-card" data-category="Dresses" data-size="XS" data-color="white">
+                        <div class="product-image">
+                            <img src="images/dresses/whiteFormalDress.jfif" alt="White Party Dress">
+                            <div class="product-overlay"></div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">White Party Dress</h3>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>(112)</span>
+                            </div>
+                            <p class="product-price">$59.99</p>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Product 6 -->
+                    <div class="category-card" data-category="Tops" data-size="M" data-color="black">
+                        <div class="product-image">
+                            <img src="images/tops/black crop top.jfif" alt="Black Crop Top">
+                            <div class="product-overlay"></div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Black Crop Top</h3>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>(78)</span>
+                            </div>
+                            <p class="product-price">$24.99</p>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pagination">
+                    <button class="pagination-btn"><i class="fas fa-chevron-left"></i></button>
+                    <button class="pagination-btn active">1</button>
+                    <button class="pagination-btn">2</button>
+                    <button class="pagination-btn">3</button>
+                    <button class="pagination-btn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Owethu's Boutique - Your one-stop shop for trendy girls' clothing. We offer the latest fashion trends with quality and style.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="dresses.html">Dresses</a></li>
+                    <li><a href="#new-arrivals">New Arrivals</a></li>
+                    <li><a href="#sale">Sale</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-envelope"></i> info@owethusboutique.com</p>
+                <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Fashion Street, Style City</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Owethu's Boutique. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="shop.js"></script>
+
+    <!-- Quick View Modal -->
+    <div class="quick-view-modal" id="quickViewModal">
+        <div class="modal-content">
+            <button class="close-modal"><i class="fas fa-times"></i></button>
+            <div class="modal-product">
+                <div class="modal-product-image">
+                    <img src="" alt="" id="modalProductImage">
+                </div>
+                <div class="modal-product-info">
+                    <h2 id="modalProductTitle"></h2>
+                    <div class="modal-product-rating" id="modalProductRating"></div>
+                    <p class="modal-product-price" id="modalProductPrice"></p>
+                    <p class="modal-product-description" id="modalProductDescription"></p>
+                    
+                    <div class="modal-product-options">
+                        <div class="size-selector">
+                            <label>Size:</label>
+                            <select id="modalProductSize">
+                                <option value="XS">XS</option>
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                            </select>
+                        </div>
+                        <div class="quantity-selector">
+                            <label>Quantity:</label>
+                            <div class="quantity-controls">
+                                <button class="quantity-btn" id="decreaseQuantity">-</button>
+                                <input type="number" value="1" min="1" id="productQuantity">
+                                <button class="quantity-btn" id="increaseQuantity">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="add-to-cart-modal">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
