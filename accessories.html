@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessories - Owethu's Boutique</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="shop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Owethu's Boutique</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="#new-arrivals">New Arrivals</a></li>
+                <li><a href="#sale">Sale</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="#search" class="search-icon"><i class="fas fa-search"></i></a>
+                <a href="#cart" class="cart-icon"><i class="fas fa-shopping-cart"></i><span class="cart-count">0</span></a>
+                <a href="#account" class="account-icon"><i class="fas fa-user"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="shop-main">
+        <section class="shop-header">
+            <h1>Our Accessories Collection</h1>
+            <p>Discover our beautiful collection of accessories to complete your look</p>
+        </section>
+
+        <div class="shop-container">
+            <aside class="shop-sidebar">
+                <div class="filter-section">
+                    <h3>Accessory Types</h3>
+                    <ul class="category-list">
+                        <li><a href="#" class="active">All Accessories</a></li>
+                        <li><a href="#">Bags</a></li>
+                        <li><a href="#">Jewelry</a></li>
+                        <li><a href="#">Hats</a></li>
+                        <li><a href="#">Scarves</a></li>
+                    </ul>
+                </div>
+
+                <div class="filter-section">
+                    <h3>Price Range</h3>
+                    <div class="price-range">
+                        <input type="range" min="0" max="100" value="50" class="price-slider">
+                        <div class="price-values">
+                            <span>$0</span>
+                            <span>$100</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filter-section">
+                    <h3>Color</h3>
+                    <div class="color-options">
+                        <button class="color-btn" style="background-color: #ff69b4;"></button>
+                        <button class="color-btn" style="background-color: #ffffff;"></button>
+                        <button class="color-btn" style="background-color: #000000;"></button>
+                        <button class="color-btn" style="background-color: #ffd700;"></button>
+                        <button class="color-btn" style="background-color: #0000ff;"></button>
+                    </div>
+                </div>
+            </aside>
+
+            <section class="shop-content">
+                <div class="shop-toolbar">
+                    <div class="sort-options">
+                        <label for="sort">Sort by:</label>
+                        <select id="sort">
+                            <option value="featured">Featured</option>
+                            <option value="newest">Newest</option>
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                        </select>
+                    </div>
+                    <div class="view-options">
+                        <button class="view-btn active" data-view="grid"><i class="fas fa-th"></i></button>
+                        <button class="view-btn" data-view="list"><i class="fas fa-list"></i></button>
+                    </div>
+                </div>
+
+                <div class="products-grid">
+                    <!-- Accessory 1 -->
+                    <div class="category-card" data-category="Bags" data-color="pink">
+                        <div class="product-image">
+                            <img src="images/accessories/pink bag.jfif" alt="Pink Bag">
+                            <div class="product-overlay"></div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Pink Bag</h3>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(156)</span>
+                            </div>
+                            <p class="product-price">$39.99</p>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Accessory 2 -->
+                    <div class="category-card" data-category="Jewelry" data-color="gold">
+                        <div class="product-image">
+                            <img src="images/accessories/gold necklace.jfif" alt="Gold Necklace">
+                            <div class="product-overlay"></div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Gold Necklace</h3>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>(98)</span>
+                            </div>
+                            <p class="product-price">$29.99</p>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Accessory 3 -->
+                    <div class="category-card" data-category="Hats" data-color="black">
+                        <div class="product-image">
+                            <img src="images/accessories/black hat.jfif" alt="Black Hat">
+                            <div class="product-overlay"></div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Black Hat</h3>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(134)</span>
+                            </div>
+                            <p class="product-price">$24.99</p>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Accessory 4 -->
+                    <div class="category-card" data-category="Scarves" data-color="pink">
+                        <div class="product-image">
+                            <img src="images/accessories/pink scarf.jfif" alt="Pink Scarf">
+                            <div class="product-overlay"></div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Pink Scarf</h3>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>(112)</span>
+                            </div>
+                            <p class="product-price">$19.99</p>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Accessory 5 -->
+                    <div class="category-card" data-category="Bags" data-color="black">
+                        <div class="product-image">
+                            <img src="images/accessories/black bag.jfif" alt="Black Bag">
+                            <div class="product-overlay"></div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Black Bag</h3>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>(87)</span>
+                            </div>
+                            <p class="product-price">$34.99</p>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Accessory 6 -->
+                    <div class="category-card" data-category="Jewelry" data-color="silver">
+                        <div class="product-image">
+                            <img src="images/accessories/sliver necklace.jfif" alt="Silver Necklace">
+                            <div class="product-overlay"></div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Silver Necklace</h3>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(145)</span>
+                            </div>
+                            <p class="product-price">$29.99</p>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pagination">
+                    <button class="pagination-btn"><i class="fas fa-chevron-left"></i></button>
+                    <button class="pagination-btn active">1</button>
+                    <button class="pagination-btn">2</button>
+                    <button class="pagination-btn">3</button>
+                    <button class="pagination-btn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Owethu's Boutique - Your one-stop shop for trendy girls' clothing. We offer the latest fashion trends with quality and style.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="tops.html">Tops</a></li>
+                    <li><a href="bottoms.html">Bottoms</a></li>
+                    <li><a href="accessories.html">Accessories</a></li>
+                    <li><a href="#new-arrivals">New Arrivals</a></li>
+                    <li><a href="#sale">Sale</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-envelope"></i> tatendamidzi49@gmail.com</p>
+                <p><i class="fas fa-phone"></i> +27 68 193 0814</p>
+                <p><i class="fas fa-map-marker-alt"></i> 120 Groove Street</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Tatenda Midzi. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="shop.js"></script>
+
+    <!-- Quick View Modal -->
+    <div class="quick-view-modal" id="quickViewModal">
+        <div class="modal-content">
+            <button class="close-modal"><i class="fas fa-times"></i></button>
+            <div class="modal-product">
+                <div class="modal-product-image">
+                    <img src="" alt="" id="modalProductImage">
+                </div>
+                <div class="modal-product-info">
+                    <h2 id="modalProductTitle"></h2>
+                    <div class="modal-product-rating" id="modalProductRating"></div>
+                    <p class="modal-product-price" id="modalProductPrice"></p>
+                    <p class="modal-product-description" id="modalProductDescription"></p>
+                    
+                    <div class="modal-product-options">
+                        <div class="color-selector">
+                            <label>Color:</label>
+                            <select id="modalProductColor">
+                                <option value="pink">Pink</option>
+                                <option value="black">Black</option>
+                                <option value="gold">Gold</option>
+                                <option value="silver">Silver</option>
+                            </select>
+                        </div>
+                        <div class="quantity-selector">
+                            <label>Quantity:</label>
+                            <div class="quantity-controls">
+                                <button class="quantity-btn" id="decreaseQuantity">-</button>
+                                <input type="number" value="1" min="1" id="productQuantity">
+                                <button class="quantity-btn" id="increaseQuantity">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="add-to-cart-modal">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
