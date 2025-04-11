@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account - Owethu's Boutique</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/account.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Owethu's Boutique</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="#new-arrivals">New Arrivals</a></li>
+                <li><a href="#sale">Sale</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="#search" class="search-icon"><i class="fas fa-search"></i></a>
+                <a href="cart.html" class="cart-icon"><i class="fas fa-shopping-cart"></i><span class="cart-count">0</span></a>
+                <a href="account.html" class="account-icon"><i class="fas fa-user"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="account-container">
+        <div class="account-content">
+            <div class="account-menu">
+                <h2>My Account</h2>
+                <ul>
+                    <li><a href="#" class="active" data-tab="profile">Profile</a></li>
+                    <li><a href="#" data-tab="orders">Orders</a></li>
+                    <li><a href="#" data-tab="addresses">Addresses</a></li>
+                    <li><a href="#" data-tab="security">Security</a></li>
+                </ul>
+            </div>
+
+            <div class="account-main">
+                <div id="profile" class="tab-content active">
+                    <h2>Profile Information</h2>
+                    <form id="profile-form">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <button type="submit" class="save-btn">Save Changes</button>
+                    </form>
+                </div>
+
+                <div id="orders" class="tab-content">
+                    <h2>Order History</h2>
+                    <div class="orders-list">
+                        <!-- Orders will be added dynamically -->
+                    </div>
+                </div>
+
+                <div id="addresses" class="tab-content">
+                    <h2>Saved Addresses</h2>
+                    <div class="addresses-list">
+                        <!-- Addresses will be added dynamically -->
+                    </div>
+                    <button class="add-address-btn">Add New Address</button>
+                </div>
+
+                <div id="security" class="tab-content">
+                    <h2>Security Settings</h2>
+                    <form id="security-form">
+                        <div class="form-group">
+                            <label for="current-password">Current Password</label>
+                            <input type="password" id="current-password" name="current-password" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="new-password">New Password</label>
+                            <input type="password" id="new-password" name="new-password" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="confirm-password">Confirm New Password</label>
+                            <input type="password" id="confirm-password" name="confirm-password" required>
+                        </div>
+                        <button type="submit" class="save-btn">Update Password</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Owethu's Boutique - Your one-stop shop for trendy girls' clothing. We offer the latest fashion trends with quality and style.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="dresses.html">Dresses</a></li>
+                    <li><a href="#new-arrivals">New Arrivals</a></li>
+                    <li><a href="#sale">Sale</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-envelope"></i> tatendamidzi49@gmail.com</p>
+                <p><i class="fas fa-phone"></i> +27 68 193 0814</p>
+                <p><i class="fas fa-map-marker-alt"></i> 120 Groove Street</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Tatenda Midzi. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/account.js"></script>
+</body>
+</html> 
