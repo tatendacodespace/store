@@ -1,3 +1,4 @@
+## On pause, i intend to come to this (if i'm still unemployed within the next 3 months)
 # Owethu's Boutique
 eCommerce Store (Work in Progress)
 This is a work-in-progress eCommerce store built using Spring Boot, HTML, CSS, JavaScript, and SQL. The goal of this project is to create a fully functional online store where users can browse products, add them to their cart, and proceed with checkout.
